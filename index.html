@@ -11,11 +11,10 @@
 </head>
 
 <style>
-  /* Top */
   .jumbotron {
     margin-top: 10px;
     min-height: 425px;
-    background-image: url(static/img/bacteria-blue.jpg);
+    background-image: url(static/img/bacteria.jpg);
     background-size: cover;
     padding-top: 35px;
     text-align: center;
@@ -29,11 +28,9 @@
     font-weight: 540;
     line-height: 1.2;
   }
-  /* Video */
   video {
     box-shadow: 10px 10px 5px grey;
   }
-  /* About */
   .about {
     font-size: 18px;
     font-family: Arial;
@@ -58,7 +55,7 @@
     color: black;
     margin-top: 60px;
   }
-  /* About Deshboard */
+
   .aboutdeshboard {
     font-size: 18px;
     font-family: Arial;
@@ -70,7 +67,6 @@
     padding-right: 15px;
     margin-bottom: 0px; 
   }
-  /* Menu and Demographics */
   .menustyle {
     box-shadow: 0 8px 14px -6px rgb(74, 74, 74);
     padding: 20px;
@@ -130,7 +126,6 @@
     padding-bottom: 0px;
   }
 
-  /* Charts */
   .chartbox {
     box-shadow: 0 8px 14px -6px rgb(74, 74, 74);
     padding: 20px;
@@ -146,7 +141,6 @@
     padding-bottom: 8px;
     border-radius: 25px;
   }
-  /* Dashboard */
   .dashboardrow1 {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -156,7 +150,6 @@
     margin-top: 10px;
     margin-bottom: 150px;
   }
-  /* Footer */
   .footerstyle {
     right: 0;
     bottom: 0;
@@ -178,26 +171,20 @@
 <body>
 
   <div class="container">
-    <!-- Jumbotron -->
+    
     <div class="row">
       <div class="col-md-12 jumbotron">
         <h1 class="h1">Belly Button Biodiversity<br>Dashboard</h1>
       </div>
     </div>
-    <!-- Intro -->
+    
     <div class="row">
       <h2 class="title display-5">About This Research</h2>
       <hr>
       <!-- Story -->
       <div class="col-md-7">
         <div class="single-post-content-wrapper p-3">
-          <p class="about">"The belly button is one of the habitats closest to us, and yet it remains relatively 
-            unexplored. In January 2011, we launched Belly Button Biodiversity to investigate the 
-            microbes inhabiting our navels and the factors that might influence the microscopic life 
-            calling this protected, moist patch of skin home. In addition to inspiring scientific 
-            curiosity, Belly Button Biodiversity inspired conversations about the beneficial roles 
-            microbes play in our daily lives."<br>On the right, is a fragment of a documentary about 
-            this project.<br><br>
+          <p class="about">".<br><br>
             Source: <a class="link" href="http://robdunnlab.com/projects/belly-button-biodiversity/" target="_blank">The Public Science Lab</a>
           </p>
         </div>
@@ -205,7 +192,7 @@
       <!-- Video -->
       <div class="col-md-4">
         <video width="480" height="265" controls class="pr-3" style = "object-fit: cover;">
-          <source src="static/img/BBB_VP8.webm" type="video/webm">
+          <source src="static/img/bacteria_vid.webm" type="video/webm">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -230,7 +217,7 @@
         part of the dataset.
       </p>
       <hr>
-      <!-- Menu and Demographics -->
+      
       <div class="col-md-2 dashboardrow1">
         <div class="well menustyle">
           <h6 class="menutitle">Test Subject ID</h6>
@@ -243,23 +230,22 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <!-- Bubble Chart -->
+     
       <div class="col-md-10 dashboardrow1">
         <div id="bubble" class="chartbox"></div>
       </div>
     </div>
     <div class="row">
-      <!-- Bar Chart -->
+      
       <div class="col-md-7 dashboardrow2">
         <div id="bar" class="chartbox"></div>
       </div>
-      <!-- Gauge -->
       <div class="col-md-5 dashboardrow2">
         <div id="gauge" class="gaugebox"></div>
       </div>
     </div>
   </div>
-  <!-- Footer -->
+ 
   <footer class="footerstyle">
    
     </span>
@@ -268,8 +254,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="static/js/app.js"></script>
-  <!-- <script src="./static/js/bonus.js"></script> -->
-  <!-- <script src="samples.json"></script> -->
+ 
   
 </body>
 
