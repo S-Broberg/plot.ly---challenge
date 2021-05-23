@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BBB</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="icon" href="static/img/bacteria.svg">
+</head>
+
+<style>
+  /* Top */
+  .jumbotron {
+    margin-top: 10px;
+    min-height: 425px;
+    background-image: url(static/img/bacteria-blue.jpg);
+    background-size: cover;
+    padding-top: 35px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 16px -6px black;
+  }
+
+  .jumbotron>.h1 {
+    font-family: Arial;
+    font-size: 77px;
+    font-weight: 540;
+    line-height: 1.2;
+  }
+  /* Video */
+  video {
+    box-shadow: 10px 10px 5px grey;
+  }
+  /* About */
+  .about {
+    font-size: 18px;
+    font-family: Arial;
+    color: rgb(80, 80, 80); 
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 30px;
+    margin-bottom: 0px; 
+  }
+
+  .link {
+    font-size: 18px;
+    font-family: Arial;
+    color: rgb(111, 110, 110);
+    font-weight: 600; 
+    line-height: 1.7;
+  }
+
+  .title {
+    font-family: Arial;
+    color: black;
+    margin-top: 60px;
+  }
+  /* About Deshboard */
+  .aboutdeshboard {
+    font-size: 18px;
+    font-family: Arial;
+    color: rgb(80, 80, 80); 
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0px; 
+  }
+  /* Menu and Demographics */
+  .menustyle {
+    box-shadow: 0 8px 14px -6px rgb(74, 74, 74);
+    padding: 20px;
+    border-radius: 25px;
+    height: 135px;
+  }
+
+  .menutitle {
+    font-family: Arial;
+    font-size: 16px;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  .dropdown {
+    font-family: Arial;
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+    padding: 5px;
+    border-radius: 25px;
+    margin-left: 28px;
+  }
+
+  .panelstyle {
+    border-color: rgb(206, 206, 206);
+    box-shadow: 0 8px 14px -6px rgb(74, 74, 74);
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 31px;
+  }
+
+  .panel-primary>.panel-heading {
+    height: 85px;
+    background-color: rgb(242, 242, 242);
+    border-bottom-color: rgb(242, 242, 242);
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .panel-title {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(3, 3, 3);
+    line-height: 1.7;
+  }
+
+  .panel-body {
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: rgb(80, 80, 80);
+    padding-bottom: 0px;
+  }
+
+  /* Charts */
+  .chartbox {
+    box-shadow: 0 8px 14px -6px rgb(74, 74, 74);
+    padding: 20px;
+    padding-bottom: 25px;
+    border-radius: 25px;
+  }
+
+  .gaugebox {
+    background-color: white;
+    box-shadow: 0 8px 14px -6px rgb(74, 74, 74);
+    padding: 10px;
+    padding-top: 34px;
+    padding-bottom: 8px;
+    border-radius: 25px;
+  }
+  /* Dashboard */
+  .dashboardrow1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .dashboardrow2 {
+    margin-top: 10px;
+    margin-bottom: 150px;
+  }
+  /* Footer */
+  .footerstyle {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    background: rgb(240, 240, 240);
+    font-size: 15px;
+    color: black;
+    font-family: Arial;
+    text-align: center;
+  }
+
+  .footcolor {
+    color: rgb(133, 133, 133);
+  }
+
+</style>
+
+<body>
+
+  <div class="container">
+    <!-- Jumbotron -->
+    <div class="row">
+      <div class="col-md-12 jumbotron">
+        <h1 class="h1">Belly Button Biodiversity<br>Dashboard</h1>
+      </div>
+    </div>
+    <!-- Intro -->
+    <div class="row">
+      <h2 class="title display-5">About This Research</h2>
+      <hr>
+      <!-- Story -->
+      <div class="col-md-7">
+        <div class="single-post-content-wrapper p-3">
+          <p class="about">"The belly button is one of the habitats closest to us, and yet it remains relatively 
+            unexplored. In January 2011, we launched Belly Button Biodiversity to investigate the 
+            microbes inhabiting our navels and the factors that might influence the microscopic life 
+            calling this protected, moist patch of skin home. In addition to inspiring scientific 
+            curiosity, Belly Button Biodiversity inspired conversations about the beneficial roles 
+            microbes play in our daily lives."<br>On the right, is a fragment of a documentary about 
+            this project.<br><br>
+            Source: <a class="link" href="http://robdunnlab.com/projects/belly-button-biodiversity/" target="_blank">The Public Science Lab</a>
+          </p>
+        </div>
+      </div>
+      <!-- Video -->
+      <div class="col-md-4">
+        <video width="480" height="265" controls class="pr-3" style = "object-fit: cover;">
+          <source src="static/img/BBB_VP8.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <hr>
+    <!-- Dashboard -->
+    <div class="row">
+      <h2 class="title display-5">Dashboard</h2>
+      <hr>
+      <p class="aboutdeshboard">Use the interactive charts below to explore the dataset. Select a test 
+        subject ID number in a dropdown menu to see the relative sample results.<br><br>The bubble chart 
+        represents a whole range of microbial species found in a sample of a particular test subject. 
+        Hovering over each bubble shows bacteria name with its value and its OTU ID number (for better 
+        experience, select <i>“Show closest data on hover”</i> tool from a top right corner of a chart). 
+        In this study, OTU means operational taxonomic unit.<br><br>The bar chart demonstrates 10 dominant microbial 
+        species for a selected test subject. Hover over each bar to see scientific name of a bacteria and 
+        its sample value.<br><br>The gauge indicator shows belly button washing frequency per week. For some test 
+        subjects this information is missing, and in a case of such selection, the gauge indicator is not 
+        visible, and the washing frequency is expressed as a dash.<br><br>Occasionally, things can go wrong during 
+        a research in a laboratory, and a sample can get accidentally corrupted or destroyed. As a result, 
+        a few samples in this dataset do not have any values and produce empty charts, but they are still a 
+        part of the dataset.
+      </p>
+      <hr>
+      <!-- Menu and Demographics -->
+      <div class="col-md-2 dashboardrow1">
+        <div class="well menustyle">
+          <h6 class="menutitle">Test Subject ID</h6>
+          <select id="selDataset" onchange="optionChanged(this.value)" class="dropdown"></select>
+        </div>
+        <div class="panel panel-primary panelstyle">
+          <div class="panel-heading">
+            <h5 class="panel-title">Demographic Info</h5>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <!-- Bubble Chart -->
+      <div class="col-md-10 dashboardrow1">
+        <div id="bubble" class="chartbox"></div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Bar Chart -->
+      <div class="col-md-7 dashboardrow2">
+        <div id="bar" class="chartbox"></div>
+      </div>
+      <!-- Gauge -->
+      <div class="col-md-5 dashboardrow2">
+        <div id="gauge" class="gaugebox"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footerstyle">
+   
+    </span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/app.js"></script>
+  <!-- <script src="./static/js/bonus.js"></script> -->
+  <!-- <script src="samples.json"></script> -->
+  
+</body>
+
+</html>
